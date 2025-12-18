@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Limit Breakers Familia</h1>
+      <h1>Limit-Breakers Familia</h1>
       <p>UNDER CONSTRUCTION</p>
       {isMobile ? (
         <img
