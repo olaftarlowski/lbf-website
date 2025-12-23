@@ -57,6 +57,7 @@ const NavLinks = styled.div`
     align-items: center;
     gap: 24px;
     padding: 100px 0;
+    z-index: -1;
 
     transform: ${({ isOpen }) =>
       isOpen ? "translateY(0)" : "translateY(-120%)"};

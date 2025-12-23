@@ -3,7 +3,19 @@ import { limitImg } from "../../assets/index.js";
 import { SlFire } from "react-icons/sl";
 import { LuSword } from "react-icons/lu";
 import { GiBroadsword } from "react-icons/gi";
+import { css } from "styled-components";
 
+const visuallyHidden = css`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+`;
 
 const Section = styled.section`
   background-color: #000;
@@ -88,9 +100,9 @@ const Paragraph = styled.p`
   @media (max-width: 768px) {
     font-size: 22px;
 
-      strong {
-    font-size: 26px;
-  }
+    strong {
+      font-size: 26px;
+    }
   }
 `;
 
@@ -102,7 +114,7 @@ const Quote = styled.blockquote`
   text-align: left;
   font-size: 20px;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 22px;
   }
 `;
@@ -129,8 +141,13 @@ const ListItem = styled.li`
 `;
 
 const AboutSection = () => {
+  const HiddenH1 = styled.h1`
+    ${visuallyHidden}
+  `;
+
   return (
     <Section id="about">
+      <HiddenH1>Limit Breakers Familia</HiddenH1>
       <Container>
         <Article>
           <Paragraph>
@@ -207,7 +224,10 @@ const AboutSection = () => {
         </div>
         <hr />
         <Article>
-          <Title><GiBroadsword color="white"/>  Kim jesteśmy dzisiaj? <LuSword color="white"/></Title>
+          <Title>
+            <GiBroadsword color="white" /> Kim jesteśmy dzisiaj?{" "}
+            <LuSword color="white" />
+          </Title>
 
           <Paragraph>
             Wolimy wyjść w teren niż stać w mieście. <br /> Wolimy przegrać
@@ -222,7 +242,9 @@ const AboutSection = () => {
         </Article>
         <hr />
         <Article>
-          <Title><SlFire color="gold"/> Zasada Familii <SlFire color="gold"/></Title>
+          <Title>
+            <SlFire color="gold" /> Zasada Familii <SlFire color="gold" />
+          </Title>
 
           <Paragraph>Nie liczy się gear. Nie liczy się fame.</Paragraph>
 

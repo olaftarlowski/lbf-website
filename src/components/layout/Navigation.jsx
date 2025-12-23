@@ -16,9 +16,9 @@ const Nav = styled.nav`
 
   border-bottom: 1px solid #444;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     position: fixed;
-    }
+  }
 `;
 
 const NavList = styled.ul`
@@ -46,7 +46,7 @@ const NavList = styled.ul`
 `;
 
 const NavItem = styled.li`
-    /* display: flex;
+  /* display: flex;
     justify-content: center;
     align-items: center;
 
@@ -55,7 +55,7 @@ const NavItem = styled.li`
     background-color: yellow;
     transform: translateY(-1px);
   } */
-    `;
+`;
 
 const NavButton = styled.button`
   background: none;
@@ -67,15 +67,14 @@ const NavButton = styled.button`
   padding: 8px 16px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 
-      width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-        &:hover {
+  &:hover {
     color: #ff2a3a;
     background-color: #1a1a1a;
     /* transform: translateY(-1px); */
   }
-
 
   @media (max-width: 768px) {
     font-size: 20px;
