@@ -11,6 +11,7 @@ import AboutSection from "./components/layout/AboutSection.jsx";
 import VideoSection from "./components/layout/VideoSection.jsx";
 import RecruitmentSection from "./components/layout/RecruitmentSection.jsx";
 import Footer from "./components/layout/Footer.jsx";
+import Navbar from "./components/layout/Navbar.jsx";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -18,11 +19,14 @@ function App() {
 
   return (
     <AppContentWrapper>
-      <BannerImg />
-      <Navigation />
-      <AboutSection />
-      <VideoSection />
-      <RecruitmentSection />
+      <Navbar />
+      <main style={{ paddingTop: "64px" }}>
+        <BannerImg />
+        {/* <Navigation /> */}
+        <AboutSection />
+        <VideoSection />
+        <RecruitmentSection />
+      </main>
       <Footer />
     </AppContentWrapper>
   );

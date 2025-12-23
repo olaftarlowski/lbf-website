@@ -60,7 +60,7 @@ const NavItem = styled.li`
 const NavButton = styled.button`
   background: none;
   border: none;
-  color: #e00017;
+  color: #a1122a;
   font-size: 22px;
   font-weight: 500;
   cursor: pointer;
@@ -99,7 +99,7 @@ const Burger = styled.button`
 const BurgerLine = styled.span`
   width: 24px;
   height: 2px;
-  background-color: #e00017;
+  background-color: #a1122a;
   transition: transform 0.3s ease, opacity 0.3s ease;
 `;
 

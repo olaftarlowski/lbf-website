@@ -65,7 +65,7 @@ const Article = styled.article`
 `;
 
 const Title = styled.h2`
-  color: #e00017;
+  color: #a1122a;
   font-size: 32px;
   font-weight: 600;
   line-height: 1.2;
@@ -91,7 +91,7 @@ const Paragraph = styled.p`
 `;
 
 const Quote = styled.blockquote`
-  border-left: 3px solid #e00017;
+  border-left: 3px solid #a1122a;
   padding-left: 20px;
   font-style: italic;
   opacity: 0.95;
@@ -117,10 +117,10 @@ const ListItem = styled.li`
   opacity: 0.9;
 
   &::before {
-    content: "—";
+    content: "-";
     position: absolute;
     left: 0;
-    color: #e00017;
+    color: #a1122a;
   }
 `;
 
@@ -130,8 +130,8 @@ const AboutSection = () => {
       <Container>
         <Article>
           <Paragraph>
-            Pewnego dnia, na dalekich ziemiach starego świata Albionu — jeszcze
-            zanim portale zaprowadziły wszystkich na nowe serwery — dwóch obcych
+            Pewnego dnia, na dalekich ziemiach starego świata Albionu - jeszcze
+            zanim portale zaprowadziły wszystkich na nowe serwery - dwóch obcych
             sobie ludzi spotkało się przypadkiem.
           </Paragraph>
 
@@ -149,12 +149,12 @@ const AboutSection = () => {
         <hr />
         <Article>
           <Paragraph>
-            Tym człowiekiem był <strong>PanFausT</strong> — wizjoner, który
+            Tym człowiekiem był <strong>PanFausT</strong> - wizjoner, który
             zamiast szukać idealnych warunków, wolał stworzyć własne.
           </Paragraph>
 
           <Paragraph>
-            U jego boku od samego początku stał <strong>Kacper17</strong> —
+            U jego boku od samego początku stał <strong>Kacper17</strong> -
             prawa ręka, głos rozsądku (czasem), dowódca, który potrafił zamienić
             chaos w plan… albo przynajmniej w kontrolowany chaos.
           </Paragraph>
@@ -191,7 +191,7 @@ const AboutSection = () => {
             </Paragraph>
 
             <Paragraph>
-              Zebraliśmy doświadczenie, blizny i stare historie — i ruszyliśmy
+              Zebraliśmy doświadczenie, blizny i stare historie - i ruszyliśmy
               dalej.
             </Paragraph>
 
@@ -212,7 +212,7 @@ const AboutSection = () => {
             się udać…”
             <br />
             Walczymy. Farmimy. Testujemy. Czasem zwyciężamy, czasem uczymy się
-            na błędach — ale nigdy nie cofamy się przed kolejnym limitem do
+            na błędach - ale nigdy nie cofamy się przed kolejnym limitem do
             złamania.
           </Paragraph>
         </Article>
@@ -224,7 +224,7 @@ const AboutSection = () => {
 
           <Paragraph>
             Bo limity są po to, żeby je łamać. A <br />{" "}
-            <strong>Limit-Breakers Familia</strong> <br /> — po to, żeby zawsze
+            <strong>Limit-Breakers Familia</strong> <br /> - po to, żeby zawsze
             mieć do kogo wrócić po respawnie.
           </Paragraph>
 

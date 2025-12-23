@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { bannerMain720 } from "../../assets";
+import { FaRegCopyright } from "react-icons/fa";
 
 const FooterWrapper = styled.footer`
   background-color: #000;
@@ -43,7 +44,7 @@ const Brand = styled.div`
 `;
 
 const BrandTitle = styled.h3`
-  color: #e00017;
+  color: #a1122a;
   font-size: 20px;
   margin: 0;
 `;
@@ -103,7 +104,7 @@ const Footer = () => {
       <Container>
         <Top>
           <Brand>
-          <img src={bannerMain720} alt="Limit-Breakers Familia logo" />
+            <img src={bannerMain720} alt="Limit-Breakers Familia logo" />
             {/* <BrandTitle>Limit-Breakers Familia</BrandTitle> */}
             {/* <BrandText>
               Gildia zrodzona z porażki, rozwijana przez determinację i
@@ -114,23 +115,52 @@ const Footer = () => {
 
           <Column>
             {/* <ColumnTitle>Nawigacja</ColumnTitle> */}
-            <Link onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>
+            <Link
+              onClick={() =>
+                document
+                  .getElementById("about")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
               O nas
             </Link>
-            <Link onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}>
+            <Link
+              onClick={() =>
+                document
+                  .getElementById("gallery")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
               Galeria
             </Link>
-            <Link onClick={() => document.getElementById("recruitment")?.scrollIntoView({ behavior: "smooth" })}>
+            <Link
+              onClick={() =>
+                document
+                  .getElementById("recruitment")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
               Rekrutacja
             </Link>
           </Column>
 
           <Column>
             {/* <ColumnTitle>Społeczność</ColumnTitle> */}
-            <Link onClick={() => window.open("https://discord.gg/WNQusj9F", "_blank")}>
+            <Link
+              onClick={() =>
+                window.open("https://discord.gg/WNQusj9F", "_blank")
+              }
+            >
               Discord
             </Link>
-            <Link onClick={() => window.open("https://www.youtube.com/@Limit-BreakersFamilia", "_blank")}>
+            <Link
+              onClick={() =>
+                window.open(
+                  "https://www.youtube.com/@Limit-BreakersFamilia",
+                  "_blank"
+                )
+              }
+            >
               YouTube
             </Link>
             {/* <Link disabled style={{ opacity: 0.4, cursor: "default" }}>
@@ -140,7 +170,10 @@ const Footer = () => {
         </Top>
 
         <Bottom>
-          <span>© {new Date().getFullYear()} Limit-Breakers Familia</span>
+          <span>
+            <FaRegCopyright style={{ height: "10px" }} />{" "}
+            {new Date().getFullYear()} Limit-Breakers Familia
+          </span>
           <span>Bo limity są po to, żeby je łamać</span>
         </Bottom>
       </Container>

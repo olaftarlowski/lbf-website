@@ -39,7 +39,7 @@ const Header = styled.div`
 const Title = styled.h2`
   font-size: 36px;
   font-weight: 600;
-  color: #e00017;
+  color: #a1122a;
   text-align: left;
   margin: 0;
 
@@ -49,10 +49,23 @@ const Title = styled.h2`
 `;
 
 const Description = styled.p`
-  font-size: 16px;
+position: absolute;
+/* inset: 30px 0 0 30px; */
+bottom: 30px;
+left: 30px;
+right: 30px;
+  font-size: 28px;
   line-height: 1.7;
   opacity: 0.9;
-  text-align: left;
+  text-align: center;
+
+  width: 80%;
+  margin: 0 auto 30px;
+
+  span {
+    font-size: 36px;
+    font-weight: 700;
+  }
 
   @media (max-width: 768px) {
     font-size: 26px;
@@ -61,6 +74,7 @@ const Description = styled.p`
 
 const ImageWrapper = styled.div`
   width: 100%;
+  position: relative;
   overflow: hidden;
   border-radius: 10px;
 `;
@@ -104,7 +118,7 @@ const Step = styled.div`
 `;
 
 const StepNumber = styled.span`
-  color: #e00017;
+  color: #a1122a;
   font-weight: 600;
 
       @media (max-width: 768px) {
@@ -129,11 +143,11 @@ const RecruitmentSection = () => {
       <Container>
         <Header>
           <Title>Rekrutacja</Title>
-          <Description>
+          {/* <Description>
             Wejdź do naszej karczmy! Nie szukamy perfekcyjnych statystyk ani idealnych buildów.
             Szukamy ludzi, którzy chcą grać, próbować i rozwijać się razem z
             gildią.
-          </Description>
+          </Description> */}
         </Header>
 
         <ImageWrapper>
@@ -141,6 +155,11 @@ const RecruitmentSection = () => {
             src={bannerTavern1920}
             alt="Rekrutacja do Limit-Breakers Familia"
           />
+          <Description>
+            <span>Wejdź do naszej karczmy! </span> <br></br> Nie szukamy perfekcyjnych statystyk ani idealnych buildów.
+            Szukamy ludzi, którzy chcą grać, próbować i rozwijać się razem z
+            gildią.
+          </Description>
         </ImageWrapper>
 
         <ContentGrid>
