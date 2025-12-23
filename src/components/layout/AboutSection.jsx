@@ -86,7 +86,11 @@ const Paragraph = styled.p`
   }
 
   @media (max-width: 768px) {
+    font-size: 22px;
+
+      strong {
     font-size: 26px;
+  }
   }
 `;
 

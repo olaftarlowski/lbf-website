@@ -22,6 +22,7 @@ html {
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  width: 100%;
 }
 
 body {
@@ -31,4 +32,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+main {
+  width: 100%;
 }

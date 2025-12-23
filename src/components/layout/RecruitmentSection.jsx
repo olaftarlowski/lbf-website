@@ -46,6 +46,10 @@ const Title = styled.h2`
   @media (max-width: 768px) {
     font-size: 42px;
   }
+
+      @media (max-width: 534px) {
+    font-size: 2.1em;
+  }
 `;
 
 const Description = styled.p`
@@ -65,10 +69,24 @@ right: 30px;
   span {
     font-size: 36px;
     font-weight: 700;
+    padding-top: 20px;
   }
 
   @media (max-width: 768px) {
-    font-size: 26px;
+    bottom: 10px;
+left: 10px;
+right: 10px;
+    font-size: 22px;
+    width: 100%;
+  }
+
+    @media (max-width: 534px) {
+      position: relative;
+      margin: 30px auto;
+    /* bottom: 4px;
+left: 4px;
+right: 4px; */
+    font-size: 1em;
   }
 `;
 

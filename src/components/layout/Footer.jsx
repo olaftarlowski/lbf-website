@@ -40,6 +40,10 @@ const Brand = styled.div`
   img {
     width: 180px;
     height: auto;
+
+    @media (max-width: 768px) {
+      width: 80px;
+    }
   }
 `;
 
@@ -84,7 +88,7 @@ const Link = styled.button`
 `;
 
 const Bottom = styled.div`
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.1); */border-top: 1px solid #333;
   padding-top: 24px;
   display: flex;
   justify-content: space-between;
