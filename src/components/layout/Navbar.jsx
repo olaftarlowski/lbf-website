@@ -9,8 +9,8 @@ const Nav = styled.nav`
   width: 100%;
   height: 64px;
   /* background-color: #ffffff; */
-      background-color: #000;
-    color: white;
+  background-color: #000;
+  color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   border-bottom: 1px solid #333;
@@ -27,12 +27,14 @@ const NavContainer = styled.div`
   justify-content: space-between;
 `;
 
-const Logo = styled.a`
+const Logo = styled.button`
   display: flex;
   align-items: center;
   background: #000;
   border-radius: 4px;
   padding: 12px 24px;
+  border: none;
+  cursor: pointer;
 
   img {
     height: 40px;
@@ -50,7 +52,6 @@ const NavLinks = styled.div`
     width: 100%;
     background-color: #000;
     border: 1px solid #333;
-
 
     flex-direction: column;
     align-items: center;
@@ -94,14 +95,25 @@ const Hamburger = styled.button`
   }
 `;
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const scrollToTop = () => {
+    handleNavClick();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleNavClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <Nav>
       <NavContainer>
-        <Logo href="/">
+        <Logo onClick={scrollToTop} aria-label="Scroll to top">
           <img src={bannerMain720} alt="Logo" />
         </Logo>
 
@@ -112,9 +124,15 @@ const Navbar = () => {
         </Hamburger>
 
         <NavLinks isOpen={isOpen}>
-          <NavLink href="#about">O nas</NavLink>
-          <NavLink href="#gallery">Galeria</NavLink>
-          <NavLink href="#recruitment">Rekrutacja</NavLink>
+          <NavLink href="#about" onClick={handleNavClick}>
+            O nas
+          </NavLink>
+          <NavLink href="#gallery" onClick={handleNavClick}>
+            Galeria
+          </NavLink>
+          <NavLink href="#recruitment" onClick={handleNavClick}>
+            Rekrutacja
+          </NavLink>
         </NavLinks>
       </NavContainer>
     </Nav>
